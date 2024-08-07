@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- 
+        Custom Css here ↓
+    -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 
+        Header Section ↓
+    -->
+
+
+
+    <!-- 3 steps ↓ -->
+    <section>
+        <div class="container-fluid mt-5" style="background: transparent;">
+            <div class="container">
+                <div class="d-flex flex-column flex-md-row align-items-center ">
+
+                    <div class="tab-content order-md-2 mb-2" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
+                            tabindex="0">
+                            <img style="scroll-margin-top: 80px;" class="w-100 rounded-4" id="img1" src="https://images.pexels.com/photos/225232/pexels-photo-225232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab" tabindex="0">
+                            <img style="scroll-margin-top: 80px;" class="img-fluid rounded-4" id="img2" src="https://images.pexels.com/photos/6231630/pexels-photo-6231630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab" tabindex="0">
+                            <img style="scroll-margin-top: 80px;" class="img-fluid rounded-4" id="img3" src="https://images.pexels.com/photos/4836047/pexels-photo-4836047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                            aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+                    </div>
+
+                    <div class="nav flex-column nav-pills order-md-1 me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <h3>1, 2, 3 Go...</h3>
+                        <p style="color: #6e6e6e;" >Initiate Journey with me: Begin with my user-friendly onboarding process.</p>
+                        <a href="#img1">
+                            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                                type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                <h4>1. Get in touch</h4>
+                                <p>You can contact me by phone number or form, and get replies as soon as we notice.</p>
+                                <div class="spacer"></div>
+                            </button>
+                        </a>
+    
+                        <a href="#img2">
+                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                                type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                <h4>2. Explain your Idea</h4>
+                                <p>Discuss your dream website to me, I'll work hard to make your website come alive.</p>
+                                <div class="spacer"></div>
+                            </button>
+                        </a>
+                        
+                        <a href="#img3">
+                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                <h4>3. Launch</h4>
+                                <p>We launch websites within specified timeline, ensuring a seamless and efficient process.</p>
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+    
+    
+                <style>
+                    .nav-pills .nav-link.active,
+                    .nav-pills .show>.nav-link {
+                        background: transparent;
+                        color: var(--accent);
+                    }
+
+                    .nav-link{
+                        color: #131313;
+                    }
+    
+                    .nav-link:hover {
+                        color: #4e4e4e;
+                    }
+    
+                    .tab-pane {
+                        /* background: black; */
+                        width: 100%;
+                    }
+    
+                    .nav button {
+                        text-align: start;
+                        width: 90%;
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                    div#v-pills-tabContent{
+                        width: 100%;
+                    }
+
+                    .spacer{
+                        width: 100%;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.126);
+                    }
+                </style>
+            </div>
+        </div>
+    </section>
+    <!-- 3 steps ↓ -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+    <!-- features ↓ -->
+    <section>
+        <div class="container-fluid" style="background: transparent;">
+            <div class="container">
+                <h2 class="text-center pb-3">Why me?</h2>
+                <div class="row row-cols-1 row-cols-xl-4 justify-content-md-between gap-3">
+                    <div class="col p-3 w-md-75 w-lg-100 rounded-4" style="background: url(1.svg), var(--secondary); background-repeat: no-repeat; background-position: right; background-size: contain; min-width: 25vw;">
+                        <!-- <img width="40" height="40" src="1.svg" alt=""> -->
+                        <h6>UI/UX Research</h6>
+                        <!-- <p><strong>UI/UX Research:</strong></p> -->
+                        <p>"I excel in UI/UX Research delivering higher quality results than our competitors."</p>
+                    </div>
+                    <div class="col p-3 w-md-75 w-lg-100 rounded-4" style="background: url(2.svg),var(--secondary); background-repeat: no-repeat; background-position: right; background-size: contain; min-width: 25vw;">
+                        <!-- <img width="40" height="40" src="2.svg" alt=""> -->
+                        <h6>Timeline & Moodboard</h6>
+                        <p>"I establish a timeline and mood board prior to initiating the design process for your website."</p>
+                    </div>
+                    <div class="col p-3 w-md-75 w-lg-100 rounded-4" style="background: url(3.svg),var(--secondary); background-repeat: no-repeat; background-position: right; background-size: contain; min-width: 25vw;">
+                        <!-- <img width="40" height="40" src="3.svg" alt=""> -->
+                        <h6>unlimited revisions</h6>
+                        <!-- <p><strong>Unlimited Revision:</strong></p> -->
+                        <p>"I provide Unlimited revisions to ensure your satisfaction before deploying your website."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- features ↑ -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+    <!-- about me ↓ -->
+    <section>
+        <div class="container-fluid" style="background: transparent;">
+            <div class="container">
+                <h2 class="text-center">About me</h2>
+                <div class="row row-cols-1 row-cols-md-2 d-flex flex-row-reverse">
+                    <div class="col align-self-center anim mb-5">
+                        <p>Hi 👋, I am <span style="font-family: Playwrite PE, cursive; font-weight: bold;">Bouvaneshvaran</span> based in <img style="width: 50px; rotate: -5deg;"
+                                src="Pondicherry_Gandhi_Statue.png" alt="Pondicherry Web Developer">
+                            Pondicherry, India. I have years of experience as Web
+                            Developer. Do you have Project in mind? <br>I am excited to hear about that. </p>
+                            <div class="btn">Contact me</div>
+                    </div>
+
+                    <div class="col">
+                        <img class="w-75 creator" style="border-radius: 10% 50% 50% 0;"  src="bouvan_prof_photo1.png" alt="Bouvan">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .creator{
+                background-color: none;
+                transition: all 300ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+            }
+
+            .creator:hover{
+                background-color: none;
+            }
+        </style>
+    </section>
+    <!-- about me ↑ -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+    <!-- pricing ↓ -->
+    <section>
+        <div class="container-fluid " style="background: transparent;">
+            <div class="container text-center">
+                <h3 class="pb-3">Pricing</h3>
+                <p class="lead">Here is the Exhaustive Pricing Guide for your perusal.</p>
+            </div>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-lg-2 justify-content-center">
+                    <div class="col anim mb-2" style="max-width: 450px;">
+                        <div class=" py-3 px-3 rounded-4 px-3 px-sm-5 text-center text-md-start" style="background: var(--secondary);">
+                            <p class="text-center lead border-bottom">Basic Plan</p>
+                            <h3 class="text-center pb-3">₹ 3999</h3>
+                            <ul>
+                                <li class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                        viewBox="0 -960 960 960" width="24px" fill="#48752C">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                                    </svg>Static Website</li>
+                                <li class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                        viewBox="0 -960 960 960" width="24px" fill="#48752C">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                                    </svg>Simple Design</li>
+                                <li class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                        viewBox="0 -960 960 960" width="24px" fill="#48752C">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                                    </svg>Basic Seo</li>
+                                <li class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                        viewBox="0 -960 960 960" width="24px" fill="#48752C">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                                    </svg>Mobile Responsive</li>
+                                <li class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                        viewBox="0 -960 960 960" width="24px" fill="#48752C">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                                    </svg>Free Hosting</li>
+                            </ul>
+                            <a href="#" class="btn mb-3 text-center w-100">Hire Me</a>
+                        </div>
+                    </div>
+                    <div class="col anim mb-2" style="max-width: 450px;">
+                        <div class=" py-3 px-3 px-sm-5 text-center text-md-start rounded-4" style="background: var(--secondary);">
+                            <p class="text-center lead border-bottom">Premium Plan</p>
+                            <h3 class="text-center pb-3"> <span class="lead">from</span> ₹14999</h3>
+                            <ul>
+                                <li class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                        viewBox="0 -960 960 960" width="24px" fill="#48752C">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                                    </svg>Dynamic Website</li>
+                                <li class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                        viewBox="0 -960 960 960" width="24px" fill="#48752C">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                                    </svg>Industry Standard Design</li>
+                                <li class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                        viewBox="0 -960 960 960" width="24px" fill="#48752C">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                                    </svg>Seo Friendly</li>
+                                <li class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                        viewBox="0 -960 960 960" width="24px" fill="#48752C">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                                    </svg>Mobile Responsive</li>
+                                <li class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                        viewBox="0 -960 960 960" width="24px" fill="#48752C">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                                    </svg>Domain and Hosting</li>
+                                <li class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                        viewBox="0 -960 960 960" width="24px" fill="#48752C">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                                    </svg>Ecommerce Functionality</li>
+                            </ul>
+                            <a href="#" class="btn mb-3 text-center w-100">Hire Me</a>
+                        </div>
+                    </div>
+                    <!-- <div class="col mb-5">
+                        <div class="card not-allowed user-select-none shadow-sm">
+                            <div class="card-header ">
+                                <h4>Future Service</h4>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text">Product Design</p>
+                                <p class="card-text">Brand Idendity</p>
+                                <p class="card-text">Logo Design</p>
+                                <p class="card-text">Content Marketing</p>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- pricing ↑ -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+    <!-- Faq ↓ -->
+    <section>
+        <div class="container-fluid" style="background: transparent;">
+            <div class="container">
+                <div class="row d-flex  justify-content-between">
+                    <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start">
+                        <h1 class="">Having more <br> doubts? <br> I got You!</h1>
+                    </div>
+                    <div class="col-12 col-md-7 anim">
+                        <div class="accordion" id="accordionPanelsStayOpenExample" style="--bs-accordion-bg: transparent;
+                        --bs-accordion-color: #000000;
+                        --bs-accordion-btn-color: #141414;
+                        --bs-accordion-active-bg: transparent;
+                        --bs-accordion-active-color: #000000;
+                        --bs-accordion-border-color: #000;
+                        --bs-accordion-btn-focus-box-shadow: none;">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                  What is the duration required to construct a website?
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <p>it depends on your project complexity</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                  Can I update the website myself once it is built?
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                  How do you build my website?
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .accordion-button:not(.collapsed) {
+                box-shadow: none;
+            }
+        
+            .accordion-button::after {
+                margin: 0 2rem 0 0;
+            }
+        
+            .accordion-button {
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: flex-end;
+            }
+        </style>
+    </section>
+    <!-- Faq ↑ -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+    <!-- footer section ↓ -->
+    <footer>
+        <div class="container-fluid" style="background: var(--accent);">
+            <div class="container text-dark py-5">
+                <div class="row d-flex align-items-start gap-5 gap-md-0">
+
+                    <div class="col-12 col-md-4 order-md-2">
+                        <ul class="footer-menu">
+                            <li class="text-dark">
+                                <h3>Quick Links</h3>
+                            </li>
+                            <li class="mb-2">
+                                <a href="">Pricing</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="">Portfolio</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="">Affiliate Commision</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-4 order-md-3">
+                        <h3 class="text-dark">Physical Address:</h3>
+                        <p style="
+                        color: black;
+                    ">Shanmuga Green City, <br>Sendhanatham<br>Puducherry - 605110</p>
+                    </div>
+
+                    <div class="col-12 col-md-4 order-md-1">
+                        <div class="logo">
+                            <a href="">
+                                <h3>WebZeero</h3>
+                            </a>
+                            <p style="
+                            color: black;
+                        ">Copyright © 2024 - Webzeero</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section ↑ -->
+
+    <!-- 
+    bootstrap javascript link
+    is here ↓
+-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

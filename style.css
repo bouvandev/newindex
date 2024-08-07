@@ -1,0 +1,96 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap');
+
+:root{
+    --accent: #f35f4f;
+    --secondary: #f2f2f2;
+}
+
+*{
+    font-size: 18px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    /* font-weight: 400; */
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) transparent;
+    /* color: black; */
+}
+
+body{
+    background: #ffffff;
+    color: #121212;
+    /* font-size: 18px; */
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Unbounded", sans-serif;
+}
+
+.logo a{
+    color: #ffffff;
+    /* text-decoration: none; */
+}
+
+a{
+    text-decoration: none;
+}
+
+footer a{
+    color: #ffffff;
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    padding-left: 0;
+}
+
+.not-allowed{
+    cursor: not-allowed;
+}
+
+.anim{
+    animation: appear ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0 cover 35%;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translatex(-300px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+.dummy_img{
+    width: 45vw;
+    height: 35vw;
+    background: url(https://images.unsplash.com/photo-1681310338089-c2420f6c048e?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: top-left;
+    border-radius: 1rem;
+}
+
+.btn{
+    background: #000000;
+    color: var(--secondary);
+    /* border: 3px solid transparent; */
+}
+
+.btn:hover{
+    background: #151515;
+    color: #ffffff;
+}
+
+section{
+    margin-bottom: 150px;
+}
+
