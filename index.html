@@ -49,12 +49,12 @@
 
                     <div class="nav flex-column nav-pills order-md-1 me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <h3>1, 2, 3 Go...</h3>
-                        <p style="color: #6e6e6e;" >Initiate your journey: Begin with my user-friendly onboarding process.</p>
+                        <p style="color: #6e6e6e;" >Initiate Journey with me: Begin with my user-friendly onboarding process.</p>
                         <a href="#img1">
                             <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
                                 type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
                                 <h4>1. Get in touch</h4>
-                                <p>You can contact me by phone number or form, and get replies as soon as we notice.</p>
+                                <p>You can contact me by form, and get replies as soon as I notice.</p>
                                 <div class="spacer"></div>
                             </button>
                         </a>
@@ -159,30 +159,23 @@
         <div class="container-fluid" style="background: transparent;">
             <div class="container">
                 <h2 class="text-center">About me</h2>
-                <div class="row row-cols-1 row-cols-md-2 d-flex flex-row-reverse rounded-4 p-4" style="background: rgb(52, 226, 226); overflow: clip;">
-                    <div class="col align-self-center anim mb-5">
+                <div class="row row-cols-1 row-cols-md-2 d-flex flex-row-reverse rounded-4 p-4" style="background: var(--secondary); overflow: clip;">
+                    <div class="col align-self-center anim mb-5" style="position: relative; z-index: 1;">
                         <p>Hi 👋, I am <span style="font-family: Playwrite PE, cursive; font-weight: bold;">Bouvaneshvaran</span> based in <img style="width: 50px; rotate: -5deg;"
                                 src="Pondicherry_Gandhi_Statue.png" alt="Pondicherry Web Developer">
                             Pondicherry, India. I have years of experience as Web
                             Developer. Do you have Project in mind? <br>I am excited to hear about that. </p>
-                            <div class="btn">Contact me</div>
+                            <a class="btn" href="#contact_form">Contact me</a>
                     </div>
 
-                    <div class="col d-flex justify-content-center">
+                    <div class="col d-flex justify-content-center" style="position: relative; z-index: 2;">
                         <img class="w-75 creator" style="border-radius: 10% 50% 50% 0;"  src="bouvan_prof_photo1.png" alt="Bouvan">
                     </div>
                 </div>
             </div>
         </div>
         <style>
-            .creator{
-                background-color: none;
-                transition: all 300ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-            }
 
-            .creator:hover{
-                background-color: none;
-            }
         </style>
     </section>
     <!-- about me ↑ -->
@@ -197,7 +190,7 @@
                 <p class="lead">Here is the Exhaustive Pricing Guide for your perusal.</p>
             </div>
             <div class="container">
-                <div class="row row-cols-1 row-cols-lg-2 justify-content-center">
+                <div class="row row-cols-1 row-cols-lg-2 justify-content-evenly">
                     <div class="col anim mb-2" style="max-width: 450px;">
                         <div class=" py-3 px-3 rounded-4 px-3 px-sm-5 text-center text-md-start" style="background: var(--secondary);">
                             <p class="text-center lead border-bottom">Basic Plan</p>
@@ -224,7 +217,7 @@
                                         <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
                                     </svg>Free Hosting</li>
                             </ul>
-                            <a href="#" class="btn mb-3 text-center w-100">Hire Me</a>
+                            <a href="#contact_form" class="btn mb-3 text-center w-100">Hire Me</a>
                         </div>
                     </div>
                     <div class="col anim mb-2" style="max-width: 450px;">
@@ -257,7 +250,7 @@
                                         <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
                                     </svg>Ecommerce Functionality</li>
                             </ul>
-                            <a href="#" class="btn mb-3 text-center w-100">Hire Me</a>
+                            <a href="#contact_form" class="btn mb-3 text-center w-100">Hire Me</a>
                         </div>
                     </div>
                     <!-- <div class="col mb-5">
@@ -280,6 +273,81 @@
     </section>
     <!-- pricing ↑ -->
     <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+    
+    
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+    <!-- contact form ↓ -->
+    <section>
+        <div class="container d-flex align-items-center flex-column" id="contact_form" style="scroll-margin-top: 80px;">
+            <h3>Contact</h3>
+            <p class="lead text-center mb-3" style="max-width: 600px; color: #6e6e6e;">Please feel free to reach out by phone or through our contact form. We look forward to hearing from you!</p>
+                <div class="col">
+
+
+
+                    <!-- form submission -->
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLScPJep4VoPgRQ4v54QUKJZmSl3A_XOB2MX9GGkjcuGv8q2dcQ/formResponse" id="img1" class="d-flex flex-column gap-3 mb-3" style="scroll-margin-top: 80px; max-width: 550px;">
+                        <div class=" d-flex flex-column flex-lg-row gap-3">
+                            <div class="w-100">
+                                <!-- <label for="exampleInputEmail1" class="form-label">Name</label> -->
+                                 <label for="entry.1254521817"><h6>Name</h6></label>
+                                <input type="text" name="entry.1254521817" placeholder="e.g. Ram Kumar" class="form-control" id="name" aria-describedby="name">
+                            </div>
+                            <div class="w-100">
+                                <!-- <label for="exampleInputEmail1" class="form-label">Contact Number</label> -->
+                                <label for="entry.961907244"><h6>Phone Number</h6></label>
+                                <input type="number" name="entry.961907244" placeholder="012-345-678" class="form-control" id="phone-number" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                          <!-- <label for="exampleInputPassword1" class="form-label">Email</label> -->
+                          <label for="entry.1170844227"><h6>What is the purpose to create website?</h6></label>
+                          <input type="text" name="entry.1170844227" class="form-control" id="website-purpose" placeholder="e.g. (website for coffee shop)">
+                        </div>
+                        <div class="mb-3">
+                          <!-- <label for="exampleInputPassword1" class="form-label">Email</label> -->
+                          <label for="entry.17894707"><h6>Please enter your website URL if you've already have one up or leave blank</h6></label>
+                          <input type="text" name="entry.17894707" class="form-control" id="website" placeholder="e.g. (www.webzeero.com)">
+                        </div>
+                        
+                        <div class="d-flex justify-content-around gap-3">
+                            <button type="submit" class="btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/>
+                                </svg>
+                                Submit</button>
+                                <p>or</p>
+                                <a class="btn-secondary" href="tel:+918682953091">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                                    Call now</a>
+                        </div>
+                      </form>
+                    <!-- form submission -->
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    <style>
+        .form-control::placeholder{
+            color: #e2e2e2;
+        }
+
+        .form-control{
+            border-color: #4e4e4e;
+        }
+
+        .form-control:focus{
+            border-color: #ff634740;
+            box-shadow: 0 0 0 .25rem #fd0d0d40;
+        }
+    </style>
+    </section>
+    <!-- contact form ↑ -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
 
     <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
     <!-- Faq ↓ -->
@@ -288,7 +356,7 @@
             <div class="container">
                 <div class="row d-flex  justify-content-between">
                     <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start">
-                        <h1 class="">Having more <br> doubts? <br> I got You!</h1>
+                        <h1 class="">Having <br> doubts? <br> I got You!</h1>
                     </div>
                     <div class="col-12 col-md-7 anim">
                         <div class="accordion" id="accordionPanelsStayOpenExample" style="--bs-accordion-bg: transparent;
@@ -318,7 +386,7 @@
                               </h2>
                               <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                                 <div class="accordion-body">
-                                    <p>Absolutely! While you can enhance your site by making modifications, be aware that inexperience in coding could potentially lead to site issues. Always proceed with caution, especially when editing core site elements.</p>
+                                  <p>Absolutely! While you can enhance your site by making modifications, be aware that inexperience in coding could potentially lead to site issues. Always proceed with caution, especially when editing core site elements.</p>
                                 </div>
                               </div>
                             </div>
@@ -330,7 +398,7 @@
                               </h2>
                               <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
                                 <div class="accordion-body">
-                                    <p>I use WordPress to develop your site, it's renowned for creating both stunning and less optimal websites. With my professional expertise, I can craft a remarkable site for you in a matter of weeks.</p>
+                                  <p>I use WordPress to develop your site, it's renowned for creating both stunning and less optimal websites. With my professional expertise, I can craft a remarkable site for you in a matter of weeks.</p>
                                 </div>
                               </div>
                             </div>
@@ -363,9 +431,9 @@
             <div class="container text-dark py-5">
                 <div class="row d-flex align-items-start gap-5 gap-md-0">
 
-                    <div class="col-12 col-md-4 order-md-2">
+                    <div class="col-12 col-md-4 order-md-2" style="color: black;">
                         <ul class="footer-menu">
-                            <li class="text-dark">
+                            <li>
                                 <h3>Quick Links</h3>
                             </li>
                             <li class="mb-2">
@@ -380,21 +448,19 @@
                         </ul>
                     </div>
 
-                    <div class="col-12 col-md-4 order-md-3">
-                        <h3 class="text-dark">Physical Address:</h3>
-                        <p style="
-                        color: black;
-                    ">Shanmuga Green City, <br>Sendhanatham<br>Puducherry - 605110</p>
+                    <div class="col-12 col-md-4 order-md-3" style="color: black;">
+                        <h3 class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M480.06-486.67q30.27 0 51.77-21.56 21.5-21.55 21.5-51.83 0-30.27-21.56-51.77-21.55-21.5-51.83-21.5-30.27 0-51.77 21.56-21.5 21.55-21.5 51.83 0 30.27 21.56 51.77 21.55 21.5 51.83 21.5ZM480-168q129.33-118 191.33-214.17 62-96.16 62-169.83 0-114.86-73.36-188.1-73.36-73.23-179.97-73.23T300.03-740.1q-73.36 73.24-73.36 188.1 0 73.67 63 169.83Q352.67-286 480-168Zm0 88Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                            Physical Address:</h3>
+                        <p>Shanmuga Green City, <br>Sendhanatham<br>Puducherry - 605110</p>
                     </div>
 
-                    <div class="col-12 col-md-4 order-md-1">
+                    <div class="col-12 col-md-4 order-md-1" style="color: black;">
                         <div class="logo">
-                            <a href="" style="display: inline-block;">
+                            <a href="">
                                 <h3>WebZeero</h3>
                             </a>
-                            <p style="
-                            color: black;
-                        ">Copyright © 2024 - Webzeero</p>
+                            <p>Copyright © 2024 - Webzeero</p>
                         </div>
                     </div>
 
