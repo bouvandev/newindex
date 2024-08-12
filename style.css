@@ -61,22 +61,12 @@ ul{
 
 @keyframes appear {
     0% {
-        opacity: 0;
         transform: translatex(-300px);
     }
 
     100%{
-        opacity: 1;
         transform: translatex(0);
     }
-}
-
-.dummy_img{
-    width: 45vw;
-    height: 35vw;
-    background: url(https://images.unsplash.com/photo-1681310338089-c2420f6c048e?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-position: top-left;
-    border-radius: 1rem;
 }
 
 .btn{
@@ -85,8 +75,17 @@ ul{
     /* border: 3px solid transparent; */
 }
 
+.btn-secondary{
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #000;
+    font-weight: bold;
+}
+
 .btn:hover{
-    background: #151515;
+    background: #404040;
     color: #ffffff;
 }
 
