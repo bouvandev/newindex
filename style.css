@@ -6,7 +6,7 @@
 
 :root{
     --accent: #f35f4f;
-    --secondary: #f2f2f2;
+    --secondary: #e6d8ca;
 }
 
 *{
@@ -19,7 +19,7 @@
 }
 
 body{
-    background: #ffffff;
+    background: #e9e1d9;
     color: #121212;
     /* font-size: 18px; */
 }
