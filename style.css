@@ -5,8 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap');
 
 :root{
-    --accent: #f35f4f;
-    --secondary: #e6d8ca;
+    --accent: #5d4beb;
+    --secondary: #4fd6f3;
+    --bodybg: #f5f2eb;
 }
 
 *{
@@ -19,7 +20,7 @@
 }
 
 body{
-    background: #e9e1d9;
+    background: var(--bodybg);
     color: #121212;
     /* font-size: 18px; */
 }
