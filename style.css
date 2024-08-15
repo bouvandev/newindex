@@ -6,7 +6,7 @@
 
 :root{
     --accent: #5d4beb;
-    --secondary: #4fd6f3;
+    --secondary: #dccaff;
     --bodybg: #f5f2eb;
 }
 
@@ -20,7 +20,7 @@
 }
 
 body{
-    background: var(--bodybg);
+    background: var(--bodyby);
     color: #121212;
     /* font-size: 18px; */
 }
@@ -30,16 +30,17 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .logo a{
-    color: #ffffff;
+    color: var(--accent);
     /* text-decoration: none; */
 }
 
 a{
+    color: var(--accent);
     text-decoration: none;
 }
 
 footer a{
-    color: #ffffff;
+    color: var(--accent);
 }
 
 li{
@@ -62,17 +63,17 @@ ul{
 
 @keyframes appear {
     0% {
-        transform: translatex(-300px);
+        transform: translateX(-300px);
     }
 
     100%{
-        transform: translatex(0);
+        transform: translateX(0);
     }
 }
 
 .btn{
     background: #000000;
-    color: var(--secondary);
+    color: var(--bodybg);
     /* border: 3px solid transparent; */
 }
 
@@ -87,10 +88,9 @@ ul{
 
 .btn:hover{
     background: #404040;
-    color: #ffffff;
+    color: var(--bodybg);
 }
 
 section{
     margin-bottom: 150px;
 }
-
