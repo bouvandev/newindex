@@ -20,7 +20,7 @@
 }
 
 body{
-    background: var(--bodyby);
+    background: var(--bodybg);
     color: #121212;
     /* font-size: 18px; */
 }
