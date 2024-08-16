@@ -29,18 +29,13 @@ h1, h2, h3, h4, h5, h6{
     font-family: "Unbounded", sans-serif;
 }
 
-.logo a{
-    color: var(--accent);
-    /* text-decoration: none; */
-}
-
 a{
     color: var(--accent);
     text-decoration: none;
 }
 
 footer a{
-    color: var(--accent);
+    color: #705dff;
 }
 
 li{
