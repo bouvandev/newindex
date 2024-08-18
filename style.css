@@ -13,20 +13,21 @@
 *{
     font-size: 18px;
     font-family: "Plus Jakarta Sans", sans-serif;
-    /* font-weight: 400; */
     scrollbar-width: thin;
     scrollbar-color: var(--accent) transparent;
-    /* color: black; */
 }
 
 body{
     background: var(--bodybg);
     color: #121212;
-    /* font-size: 18px; */
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: "Unbounded", sans-serif;
+}
+
+.logo a{
+    color: var(--accent);
 }
 
 a{
@@ -35,7 +36,7 @@ a{
 }
 
 footer a{
-    color: #705dff;
+    color: var(--accent);
 }
 
 li{
@@ -69,7 +70,6 @@ ul{
 .btn{
     background: #000000;
     color: var(--bodybg);
-    /* border: 3px solid transparent; */
 }
 
 .btn-secondary{
@@ -93,6 +93,28 @@ section{
 
 @media (min-width: 1200px) {
     h1{
-        font-size: 4rem;
+        font-size: 5rem;
     }
+}
+
+.greetimg{
+    animation: greet 650ms infinite linear;
+    transform-origin: bottom;
+}
+
+@keyframes greet {
+    0%{rotate: -20deg;}
+    50%{rotate: 20deg;}
+    100%{rotate: -20deg;}
+}
+
+.feature1{
+    position: relative;
+    bottom: 0;
+    transition: 300ms ease-in-out;
+
+}
+
+.feature1:hover{
+    bottom: 10px;
 }
