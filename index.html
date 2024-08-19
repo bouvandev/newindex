@@ -23,19 +23,48 @@
 
     <!-- navbar  ↓ -->
     <navbar>
-        <div class="container py-3">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="logo">
-                    <a href="https://webzeero.com"><p style="color: #131313; font-weight: 100; font-size: 2rem;">Web<span style="color: var(--accent); font-weight: 900; font-size: 2rem;">Zeero</span></p></a>
-                </div>
-                <div class="d-none d-md-flex gap-3">
-                    <a href="#about-me">About me</a>
-                    <a href="#features">Features</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="#contact_form">Contact</a>
+        <div class="container-fluid" style="background: #65b2e4;">
+            <div class="container py-5 link">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-none d-md-flex gap-3">
+                        <a href="#about-me">About me</a>
+                        <a href="#features">Features</a>
+                    </div>
+                    <div class="log">
+                        <a href="https://webzeero.com">WZ
+                        </a>
+                    </div>
+                    <div class="d-none d-md-flex gap-3">
+                        <a href="#pricing">Pricing</a>
+                        <a href="#contact_form">Contact</a>
+                    </div>
                 </div>
             </div>
         </div>
+        <style>
+            .link a{
+                color: #000;
+                font-weight: bold;
+                padding: 0.2rem 0.5rem;
+                transition: 380ms linear;
+                border-radius: 8px;
+            }
+
+            .link a:hover{
+                background: ghostwhite;
+            }
+            
+            
+            .log a{
+                padding: 0.5rem 2rem;
+                color: black;
+                background: ghostwhite;
+                font-weight: bolder;
+                font-family: "unbounded", sans-serif;
+                border-radius: 8px;
+                font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+            }
+        </style>
     </navbar>
     <!-- navbar  ↑ -->
 
@@ -44,19 +73,27 @@
 
     <!-- Header Section ↓-->
     <main>
-        <div class="container-fluid text-center d-flex flex-column justify-content-center align-items-center" style="min-height: 80vh; margin-bottom: 80px;">
-            <h1 class="mb-3" style="color: transparent; background: linear-gradient(-120deg, #ecafa4, #f760b1,#3d13d4,#1c043e 75%, black); background-clip: text; -webkit-background-clip: text;">
-                <img class="greetimg" width="40" height="40" src="hi-svg.svg" alt="webzeero greetings">
-                Expert <br> Web Developer in <br> Pondicherry <img width="80" height="40" src="Pondicherry_Gandhi_Statue.png" alt="Pondicherry Web Developer">
+        <div class="container-fluid" style="background: linear-gradient(180deg, #65b2e4, transparent);">
+            <div class="container text-center d-flex flex-column justify-content-center align-items-center"
+                style="min-height: 60vh; margin-bottom: 150px;">
+                <h1 class="mb-3" style="color: #0f335e;">
+                    <img class="greeting" width="40" height="40" src="hi-svg.svg" alt="webzeero greetings">
+                    Expert<br>Web Developer in<br>Pondicherry
                 </h1>
-            <div class="d-flex flex-column flex-md-row justify-content-center gap-md-3 mb-5">
-                <div><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5d4beb"><path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm-42 142 226-226-56-58-170 170-86-84-56 56 142 142Z"/></svg> <strong>Affordable Price</strong></div>
-                <div><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5d4beb"><path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm-42 142 226-226-56-58-170 170-86-84-56 56 142 142Z"/></svg> <strong>High Quality</strong></div>
-                <div><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5d4beb"><path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm-42 142 226-226-56-58-170 170-86-84-56 56 142 142Z"/></svg> <strong> Modern Ui</strong></div>
-            </div>
-            <div class="d-flex justify-content-center align-items-center gap-3">
-                <a href="#contact_form" class="btn">Start a Project</a>
-                <a href="#pricing" class="btn-secondary">Check pricing</a>
+                <div class="d-flex flex-column flex-md-row justify-content-center gap-md-3 mb-5">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#6633ee"><path d="m424.04-393.35-92.48-92.67q-8.25-8.06-19.71-8.25-11.47-.19-19.96 8.31-8.7 8.69-8.7 19.96 0 11.27 8.52 19.59l108.33 108.33q10.16 10.54 23.92 10.54 13.77 0 24.27-10.54l219.31-219.31q8.11-8.11 8.31-19.57.19-11.46-8.31-20.15-8.69-8.5-19.96-8.5-11.27 0-19.64 8.36l-203.9 203.9Zm56.05 285.27q-77.15 0-145.06-29.32-67.92-29.33-118.16-79.6-50.23-50.27-79.51-118.05-29.28-67.79-29.28-144.86 0-77.15 29.32-145.06 29.33-67.92 79.6-118.16 50.27-50.23 118.05-79.51 67.79-29.28 144.86-29.28 77.15 0 145.06 29.32 67.92 29.33 118.16 79.6 50.23 50.27 79.51 118.05 29.28 67.79 29.28 144.86 0 77.15-29.32 145.06-29.33 67.92-79.6 118.16-50.27 50.23-118.05 79.51-67.79 29.28-144.86 29.28Zm-.1-55.96q131.89 0 223.93-92.02 92.04-92.03 92.04-223.93 0-131.89-92.02-223.93-92.03-92.04-223.93-92.04-131.89 0-223.93 92.02-92.04 92.03-92.04 223.93 0 131.89 92.02 223.93 92.03 92.04 223.93 92.04ZM480-480Z"/></svg> <strong>Affordable Price</strong>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#6633ee"><path d="m424.04-393.35-92.48-92.67q-8.25-8.06-19.71-8.25-11.47-.19-19.96 8.31-8.7 8.69-8.7 19.96 0 11.27 8.52 19.59l108.33 108.33q10.16 10.54 23.92 10.54 13.77 0 24.27-10.54l219.31-219.31q8.11-8.11 8.31-19.57.19-11.46-8.31-20.15-8.69-8.5-19.96-8.5-11.27 0-19.64 8.36l-203.9 203.9Zm56.05 285.27q-77.15 0-145.06-29.32-67.92-29.33-118.16-79.6-50.23-50.27-79.51-118.05-29.28-67.79-29.28-144.86 0-77.15 29.32-145.06 29.33-67.92 79.6-118.16 50.27-50.23 118.05-79.51 67.79-29.28 144.86-29.28 77.15 0 145.06 29.32 67.92 29.33 118.16 79.6 50.23 50.27 79.51 118.05 29.28 67.79 29.28 144.86 0 77.15-29.32 145.06-29.33 67.92-79.6 118.16-50.27 50.23-118.05 79.51-67.79 29.28-144.86 29.28Zm-.1-55.96q131.89 0 223.93-92.02 92.04-92.03 92.04-223.93 0-131.89-92.02-223.93-92.03-92.04-223.93-92.04-131.89 0-223.93 92.02-92.04 92.03-92.04 223.93 0 131.89 92.02 223.93 92.03 92.04 223.93 92.04ZM480-480Z"/></svg> <strong>High Quality</strong>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#6633ee"><path d="m424.04-393.35-92.48-92.67q-8.25-8.06-19.71-8.25-11.47-.19-19.96 8.31-8.7 8.69-8.7 19.96 0 11.27 8.52 19.59l108.33 108.33q10.16 10.54 23.92 10.54 13.77 0 24.27-10.54l219.31-219.31q8.11-8.11 8.31-19.57.19-11.46-8.31-20.15-8.69-8.5-19.96-8.5-11.27 0-19.64 8.36l-203.9 203.9Zm56.05 285.27q-77.15 0-145.06-29.32-67.92-29.33-118.16-79.6-50.23-50.27-79.51-118.05-29.28-67.79-29.28-144.86 0-77.15 29.32-145.06 29.33-67.92 79.6-118.16 50.27-50.23 118.05-79.51 67.79-29.28 144.86-29.28 77.15 0 145.06 29.32 67.92 29.33 118.16 79.6 50.23 50.27 79.51 118.05 29.28 67.79 29.28 144.86 0 77.15-29.32 145.06-29.33 67.92-79.6 118.16-50.27 50.23-118.05 79.51-67.79 29.28-144.86 29.28Zm-.1-55.96q131.89 0 223.93-92.02 92.04-92.03 92.04-223.93 0-131.89-92.02-223.93-92.03-92.04-223.93-92.04-131.89 0-223.93 92.02-92.04 92.03-92.04 223.93 0 131.89 92.02 223.93 92.03 92.04 223.93 92.04ZM480-480Z"/></svg> <strong> Modern Ui</strong>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center gap-3">
+                    <a href="#contact_form" class="btn">Start a Project</a>
+                </div>
             </div>
         </div>
     </main>
@@ -68,13 +105,13 @@
         <div class="container-fluid" style="background: transparent;" id="about-me">
             <div class="container">
                 <h2 class="text-center">About me</h2>
-                <div class="row row-cols-1 row-cols-md-2 d-flex flex-row-reverse rounded-4 p-2" style="background: #ece8de; overflow: clip; border: 1px dashed #00000024;">
+                <div class="row row-cols-1 row-cols-md-2 d-flex flex-row-reverse rounded-4 p-2" style="background: var(--secondary); overflow: clip; border: 1px dashed #00000024;">
                     <div class="col align-self-center anim mb-5" style="position: relative; z-index: 1;">
                         <p>Hi 👋, I am <span style="font-family: Playwrite PE, cursive; font-weight: bold;">Bouvaneshvaran</span> based in <img style="width: 50px; rotate: -5deg;"
                                 src="Pondicherry_Gandhi_Statue.png" alt="Pondicherry Web Developer">
                             Pondicherry, India. I have years of experience as Web
                             Developer. Do you have Project in mind? <br>I am excited to hear about that. </p>
-                            <a class="btn" href="#contact_form">Start a Project</a>
+                            <a class="btn" href="#contact_form">Contact me</a>
                     </div>
 
                     <div class="col d-flex justify-content-center" style="position: relative; z-index: 2;">
@@ -98,18 +135,18 @@
             <div class="container">
                 <h2 class="text-center pb-3">Features</h2>
                 <div class="row row-cols-1 row-cols-xl-4 justify-content-md-between gap-3">
-                    <div class="col p-3 w-md-75 w-lg-100 rounded-4 feature1" style="background: url(1.svg), var(--secondary); background-repeat: no-repeat; background-position: right; background-size: contain; min-width: 25vw;">
+                    <div class="col p-3 w-md-75 w-lg-100 rounded-4 feature1" style="background: url(1.svg), #b6ffa8; background-repeat: no-repeat; background-position: right; background-size: contain; min-width: 25vw;">
                         <!-- <img width="40" height="40" src="1.svg" alt=""> -->
                         <h6>UI/UX Research</h6>
                         <!-- <p><strong>UI/UX Research:</strong></p> -->
-                        <p>"I excel in UI/UX Research delivering higher quality results than our competitors."</p>
+                        <p>"I excel in UI/UX Research delivering higher quality results than your competitors."</p>
                     </div>
-                    <div class="col p-3 w-md-75 w-lg-100 rounded-4 feature1" style="background: url(2.svg),var(--secondary); background-repeat: no-repeat; background-position: right; background-size: contain; min-width: 25vw;">
+                    <div class="col p-3 w-md-75 w-lg-100 rounded-4 feature1" style="background: url(2.svg), #f8b3ff; background-repeat: no-repeat; background-position: right; background-size: contain; min-width: 25vw;">
                         <!-- <img width="40" height="40" src="2.svg" alt=""> -->
                         <h6>Timeline & Moodboard</h6>
                         <p>"I establish a timeline and mood board prior to initiating the design process for your website."</p>
                     </div>
-                    <div class="col p-3 w-md-75 w-lg-100 rounded-4 feature1" style="background: url(3.svg),var(--secondary); background-repeat: no-repeat; background-position: right; background-size: contain; min-width: 25vw;">
+                    <div class="col p-3 w-md-75 w-lg-100 rounded-4 feature1" style="background: url(3.svg), #eaef2e; background-repeat: no-repeat; background-position: right; background-size: contain; min-width: 25vw;">
                         <!-- <img width="40" height="40" src="3.svg" alt=""> -->
                         <h6>unlimited revisions</h6>
                         <!-- <p><strong>Unlimited Revision:</strong></p> -->
@@ -156,7 +193,7 @@
                             <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
                                 type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
                                 <h5>1. Get in touch</h5>
-                                <p>You can contact me by form or by Phone number, and get replies as soon as I notice.</p>
+                                <p>You can contact me by form, and get replies as soon as I notice.</p>
                                 <div class="spacer"></div>
                             </button>
                         </a>
@@ -190,11 +227,15 @@
                     }
 
                     .nav-link{
-                        color: #131313;
+                        color: var(--color);
                     }
     
                     .nav-link:hover {
-                        color: #4e4e4e;
+                        color: var(--accent);
+                    }
+
+                    .nav-link:focus {
+                        color: var(--color);
                     }
     
                     .tab-pane {
@@ -214,7 +255,7 @@
 
                     .spacer{
                         width: 100%;
-                        border-bottom: 1px solid rgba(0, 0, 0, 0.126);
+                        border-bottom: 1px dashed rgba(0, 0, 0, 0.126);
                     }
                 </style>
             </div>
@@ -453,11 +494,11 @@
                     </div>
                     <div class="col-12 col-md-7 anim">
                         <div class="accordion" id="accordionPanelsStayOpenExample" style="--bs-accordion-bg: transparent;
-                        --bs-accordion-color: #000000;
-                        --bs-accordion-btn-color: #141414;
+                        --bs-accordion-color: var(--color);
+                        --bs-accordion-btn-color: var(--color);
                         --bs-accordion-active-bg: transparent;
-                        --bs-accordion-active-color: #000000;
-                        --bs-accordion-border-color: #000;
+                        --bs-accordion-active-color: var(--color);
+                        --bs-accordion-border-color: var(--color);
                         --bs-accordion-btn-focus-box-shadow: none;">
                             <div class="accordion-item">
                               <h2 class="accordion-header">
@@ -491,7 +532,7 @@
                               </h2>
                               <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
                                 <div class="accordion-body">
-                                  <p>I use <strong>WordPress / wix / webflow / shopify</strong> to develop your site, these platforms are renowned for creating stunning websites. With my professional expertise, I can craft a remarkable site for you in a matter of weeks.</p>
+                                  <p>I use <strong>WordPress / wix / webflow / shopify</strong> to develop your site, it's renowned for creating both stunning websites. With my professional expertise, I can craft a remarkable site for you in a matter of weeks.</p>
                                 </div>
                               </div>
                             </div>
