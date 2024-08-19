@@ -99,7 +99,7 @@ section{
 }
 
 .greeting{
-    animation: greet 650ms infinite linear;
+    animation: greet 650ms infinite ease-in-out;
     transform-origin: bottom;
 }
 
@@ -111,11 +111,11 @@ section{
 
 .feature1{
     position: relative;
-    bottom: 0;
+    left: 0;
     transition: 300ms ease-in-out;
 
 }
 
 .feature1:hover{
-    bottom: 10px;
+    left: 10px;
 }
