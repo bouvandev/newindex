@@ -6,8 +6,9 @@
 
 :root{
     --accent: #5d4beb;
-    --secondary: #dccaff;
-    --bodybg: #f5f2eb;
+    --secondary: ghostwhite;
+    --bodybg: #ffffff;
+    --color: #121212;
 }
 
 *{
@@ -19,7 +20,7 @@
 
 body{
     background: var(--bodybg);
-    color: #121212;
+    color: var(--color);
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -93,11 +94,11 @@ section{
 
 @media (min-width: 1200px) {
     h1{
-        font-size: 5rem;
+        font-size: 4rem;
     }
 }
 
-.greetimg{
+.greeting{
     animation: greet 650ms infinite linear;
     transform-origin: bottom;
 }
