@@ -1,8 +1,11 @@
 
 
-
+/* body font */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Unbounded:wght@200..900&display=swap');
+/* signature font */
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap');
+/* inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root{
     --accent: #5d4beb;
@@ -12,19 +15,18 @@
 }
 
 *{
-    font-size: 18px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    scrollbar-width: thin;
-    scrollbar-color: var(--accent) transparent;
+    font-family: "Inter", "Plus Jakarta Sans", sans-serif;
 }
 
 body{
+    font-size: 18px;
     background: var(--bodybg);
     color: var(--color);
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-family: "Unbounded", sans-serif;
+    font-weight: 900;
+    font-family: "unbounded", sans-serif;
 }
 
 .logo a{
@@ -71,6 +73,7 @@ ul{
 .btn{
     background: #000000;
     color: var(--bodybg);
+    font-size: 18px;
 }
 
 .btn-secondary{
@@ -88,15 +91,17 @@ ul{
 }
 
 section{
-    margin-bottom: 150px;
+    margin-bottom: 10%;
+    margin-bottom: 10%;
 }
 
-
-@media (min-width: 1200px) {
-    h1{
-        font-size: 4rem;
+@media (max-width: 475px) {
+    section{
+        margin-bottom: 25%;
+        margin-top: 25%;
     }
 }
+
 
 .greeting{
     animation: greet 650ms infinite ease-in-out;
