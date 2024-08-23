@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WebZeero - Your best and affordable website Developer @ Pondicherry</title>
     <meta name="desciption" content="Seeking a top-notch website at a reasonable cost? You're in the right place! A skilled individual will personally handle your project, ensuring quality and attention to detail.">
+
+    <script>
+        window.onload = function(){
+            document.querySelector(".pageloader").style.display = "none";
+            document.querySelector("body").style.overflow = "auto";
+        }
+    </script>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- 
@@ -20,6 +28,19 @@
     <!-- to top ↓ -->
     <a href="#" class="btn" style="position: fixed; bottom: 10px; right: 20px; z-index: 999;">↑</a>
     <!-- to top ↑ -->
+
+    <!-- page loader ↓ -->
+    <div class="pageloader"
+        style="
+            width: 100%; 
+            height: 100vh; 
+            background: linear-gradient(180deg, #9190e9, #dfbbf7 40%, #ffffff); 
+            position: fixed;
+            z-index: 1000; 
+            overflow: hidden;
+        ">
+    </div>
+    <!-- page loader ↑ -->
 
     <main>
         <!-- navbar  ↓ -->
