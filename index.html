@@ -5,9 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WebZeero - Your website, Your Salesperson</title>
-    <meta name="desciption"
-        content="Seeking a top-notch website at a reasonable cost? You're in the right place! A skilled individual will personally handle your project, ensuring quality and attention to detail.">
-    <meta name="theme-color" content="#5d4beb">
+    <meta name="desciption" content="Seeking a top-notch website at a reasonable cost? You're in the right place! A skilled individual will personally handle your project, ensuring quality and attention to detail.">
+    <meta name="theme-color" content="#000000">
 
     <script>
         window.onload = function () {
@@ -25,9 +24,9 @@
     
 
     <!-- GSAP SCRIPTs Here↓ -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <!-- GSAP SCRIPTs Here↑ -->
 </head>
 
@@ -35,14 +34,14 @@
 
     <!-- to top ↓ -->
     <!-- <a href="#" class="btn" style="position: fixed; bottom: 10px; right: 20px; z-index: 999;">↑</a> -->
-      <!-- <button class="btn" onclick="scrolltotop()" style="position: fixed; bottom: 10px; right: 20px; z-index: 999;">↑</button> -->
+     <button class="btn" onclick="scrolltotop()" style="position: fixed; bottom: 10px; right: 20px; z-index: 999;">↑</button>
     <!-- to top ↑ -->
 
     <!-- page loader ↓ -->
     <div class="pageloader" style="
             width: 100%; 
             height: 100vh; 
-            background: linear-gradient(180deg, #9190e9, #dfbbf7 40%, #ffffff); 
+            background: linear-gradient(180deg, #000000, #07060f 40%, transparent); 
             position: fixed;
             z-index: 1000; 
             overflow: hidden;
@@ -52,7 +51,7 @@
         ">
         <div style="
                 color: var(--accent);
-                font-family: 'unbounded', sans-serif;
+                font-family: 'Young Serif', sans-serif;
                 font-size: 3rem;
                 ">
             Loading...</div>
@@ -62,7 +61,7 @@
     <main>
         <!-- navbar  ↓ -->
         <navbar>
-            <div class="container-fluid" style="background: #9290e9;">
+            <div class="container-fluid" style="background: #000000">
                 <div class="container py-3 link">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="log">
@@ -79,15 +78,14 @@
             </div>
             <style>
                 .link a {
-                    color: #000;
-                    font-weight: bold;
+                    font-weight: medium;
                     padding: 0.2rem 0.5rem;
                     transition: 380ms linear;
                     border-radius: 8px;
                 }
 
                 .link a:hover {
-                    background: rgb(255, 255, 255);
+                    background: #19162f;
                 }
 
 
@@ -98,7 +96,7 @@
                     display: block;
                     width: 50px;
                     aspect-ratio: 1;
-                    background: var(--secondary);
+                    background: var(--accent);
                     font-family: "unbounded", sans-serif;
                     border-radius: 50%;
                     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
@@ -113,7 +111,7 @@
         <!-- Header Section ↓-->
         <section style="padding-top: 0; margin-top: 0; background: none;">
             <div class="container-fluid"
-                style="background: linear-gradient(180deg, #9190e9, #dfbbf7 40%, transparent);">
+                style="background: linear-gradient(180deg, #000000, #07060f 40%, transparent);">
                 <div class="container text-center text-md-start d-flex flex-column justify-content-center align-items-center"
                     style="padding: 2rem 0;">
                     <div class="row row-cols-1 row-cols-lg-2">
@@ -122,7 +120,7 @@
                                 Get high profile website without breaking bank
                             </h1>
 
-                            <p class="mb-5 pb-5" style="color: #0e0e0e; line-height: 1;">We Believe a
+                            <p class="mb-5 pb-5" style="color: var(--color); line-height: 1;">We Believe a
                                 website
                                 should act as a
                                 <span style="position: relative; z-index: 10;">Salesperson
@@ -622,7 +620,9 @@
                             --bs-accordion-active-bg: transparent;
                             --bs-accordion-active-color: var(--color);
                             --bs-accordion-border-color: var(--color);
-                            --bs-accordion-btn-focus-box-shadow: none;">
+                            --bs-accordion-btn-focus-box-shadow: none;
+                            
+                            ">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -698,6 +698,9 @@
                     align-items: center;
                     justify-content: flex-end;
                 }
+                [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
+                    font-size: 1.2rem;
+                }
             </style>
         </section>
         <!-- Faq ↑ -->
@@ -751,7 +754,7 @@
         <!-- footer section ↑ -->
     </main>
 
-    <!-- <script>
+    <script>
         gsap.registerPlugin(ScrollTrigger);
 
         gsap.from("h1", {
@@ -762,15 +765,15 @@
             delay: 0,
             scrollTrigger: "h1",
         });
-    </script> -->
+    </script>
 
-     <!--<script>
-         let scrolltotop = function scrolltotop() {
-             window.scrollTo({
+    <script>
+        let scrolltotop = function scrolltotop() {
+            window.scrollTo({
                 top: 0,
             });
         }
-    </script> -->
+    </script>
 
     
     
@@ -782,7 +785,7 @@
         crossorigin="anonymous"></script>
     <!--bootstrap javascript linkis here ↓ -->
 
-    <script src="smooth.js"></script>
+ 
     
    
 </body>
