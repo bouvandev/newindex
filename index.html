@@ -23,6 +23,12 @@
     -->
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- GSAP SCRIPTs Here↓ -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- GSAP SCRIPTs Here↑ -->
 </head>
 
 <body style="overflow-y: hidden;">
@@ -168,13 +174,12 @@
         <!-- features ↓ -->
         <section>
             <div class="container-fluid">
-                <div class="container">
+                <div class="container gsap">
                     <h2 class="text-center">Features</h2>
                     <p class="text-md-center text-start subheading">We not only distinguish ourselves through competitive pricing, but also through exceptional features.</p>
                     <div class="flex">
-                        <div class="featurebox">
+                        <div class="featurebox1">
                             <div class="image">
-                                <img class="" src="uxdesign.jpg" alt="">
                             </div>
                             <div class="text">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF">
@@ -185,10 +190,8 @@
                                 <p>We excel in UI/UX Research delivering higher quality results than your competitors.</p>
                             </div>
                         </div>
-                        <div class="featurebox">
-                            
+                        <div class="featurebox2">
                             <div class="image order-md-2">
-                                <img class="" src="uxdesign.jpg" alt="">
                             </div>
                             <div class="text order-md-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF">
@@ -199,9 +202,8 @@
                                 <p>We establish a timeline and mood board prior to initiating the design process for your website.</p>
                             </div>
                         </div>
-                        <div class="featurebox">
+                        <div class="featurebox1">
                             <div class="image">
-                                <img class="" src="uxdesign.jpg" alt="">
                             </div>
                             <div class="text">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF">
@@ -220,10 +222,11 @@
                 .flex {
                     display: flex;
                     flex-direction: column;
-                    row-gap: 2rem;
+                    row-gap: 5rem;
                 }
 
-                .featurebox {
+                
+                .featurebox1 {
                     position: sticky;
                     top: 10px;
                     width: 100%;
@@ -234,14 +237,24 @@
                     overflow: hidden;
                 }
 
-                .image{
-                    width: 50%;
+                .featurebox2 {
+                    position: sticky;
+                    top: 30px;
+                    width: 100%;
+                    transform-origin: right;
+                    background: #e8bd12;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 3rem;
+                    overflow: hidden;
                 }
 
-                .image img{
-                    max-width: 100%;
-                    aspect-ratio: 1/1.2;
-                    object-fit: cover;
+                .image{
+                    background: url(uxdesign.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    width: 50%;
+                    height: 25rem;
                 }
 
                 .text {
@@ -264,7 +277,7 @@
         <!-- 3 steps ↓ -->
         <section>
             <div class="container-fluid" style="background: transparent;">
-                <div class="container">
+                <div class="container gsap">
                     <h2 class="text-center">Only 3 Steps</h2>
                     <p class="text-md-center text-start subheading">Initiate Journey with me: Begin
                         with
@@ -753,15 +766,31 @@
         <!-- footer section ↑ -->
     </main>
 
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
 
+        gsap.from("h1", {
+            opacity: 0,
+            y: 100,
+            duration: 1.3,
+            ease: "power1",
+            delay: 0,
+            scrollTrigger: "h1",
+        });
+    </script>
 
-    <!-- 
-    bootstrap javascript link
-    is here ↓
--->
+    
+
+    <!--bootstrap javascript linkis here ↓ -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!--bootstrap javascript linkis here ↓ -->
+
+
+    
+
+
 </body>
 
 </html>
